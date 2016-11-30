@@ -1,0 +1,12 @@
+#vhost template file
+
+<% if @port == 80 -%>
+	
+<% end -%>
+
+<VirtualHost *:<%= @port %> >
+
+	ServerName <%= @domain %>
+	DocumentRoot <%= @document_root %>
+
+</VirtualHost>
