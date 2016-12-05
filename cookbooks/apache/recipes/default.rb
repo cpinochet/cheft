@@ -55,7 +55,8 @@ end
 		mode "0644"
 		variables(
 			:site_title => data["site_title"],
-			:comingsoon => "Ya se viene ...."
+			:comingsoon => "Ya se viene ....",
+			:author_name => node["author"]["name"]
 		)
 	end
 	 
